@@ -12,12 +12,12 @@ RUN  yum install python3 -y && \
      mkdir -p /my_app/static/css  &&    \
      mkdir /my_app/templates
 
-COPY deploheroku/app.py  /my_app/
-COPY deploheroku/FuelConsumption.csv  /my_app/
-COPY deploheroku/mlmodel.py  /my_app/
-COPY deploheroku/model.pkl /my_app/
-COPY deploheroku/static/css/style.css  /my_app/static/css/
-COPY deploheroku/templates/index.html /my_app/templates/
+COPY app.py  /my_app/
+COPY FuelConsumption.csv  /my_app/
+COPY mlmodel.py  /my_app/
+COPY model.pkl /my_app/
+COPY static/css/style.css  /my_app/static/css/
+COPY templates/index.html /my_app/templates/
 
 EXPOSE  4444
 
